@@ -35,6 +35,7 @@ function App() {
 	const dispatch = useDispatch();
 	const user = useSelector(state => state.dataUser);
 	const {REACT_APP_URL} = process.env
+
 	useEffect(() => {
 		dispatch(getAllProducts()); // Traer todos los productos y mostrar Destacados
 		const token = window.localStorage.getItem('token');
