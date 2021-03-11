@@ -20,16 +20,16 @@ const EditProfile= ()=> {
 const dataUser = useSelector((state) => state.dataUser);
    useEffect(()=>{
      setInput({
-       name: dataUser && dataUser.name || "",
-       email: dataUser && dataUser.email || "",
-       address: dataUser && dataUser.address || "",
+       name: dataUser? dataUser.name : "",
+       email: dataUser ? dataUser.email : "",
+       address: dataUser ? dataUser.address : "",
      });
    },[])
 
-  const close = (e) => {
+  const close = () => {
     setShow(false);
   };
-  const toggleDrawer = (e) => {
+  const toggleDrawer = () => {
     setShow(true);
   };
 

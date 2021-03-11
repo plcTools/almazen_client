@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import processFile from "./utils/processFile.js";
 import "./ExcelUpload.scss";
 import { Modal, Button, ButtonToolbar } from "rsuite";

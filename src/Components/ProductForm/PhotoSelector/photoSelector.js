@@ -22,7 +22,7 @@ const PhotoSelector = (props) => {
 		//crea una imagen por cada link del state llamando a addImgDom y le paso parametros + funcion para el boton de borrar
 		img &&
 			img.map((dataUrl, id) => {
-				addImgDom(dataUrl, id, delPhoto);
+				return addImgDom(dataUrl, id, delPhoto);
 			});
 	}, [statePhotos.images]);
 
